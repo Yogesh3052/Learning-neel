@@ -19,7 +19,7 @@ public:
     }   
     void displaydata()
     {
-
+        cout<<"Name: "<<name<<'\n'<<"Roll No.: "<<roll<<'\n'<<"Marks: "<<marks<<endl;
     }
 };
 
@@ -40,11 +40,13 @@ int main()
     }
     fout.close();
     fin.open("fin_data.txt", ios :: in);
-    for (int i = 0; i < n ; i++)
+    fin.open("DATA",ios::in);
+
+    cout<<'\n'<<"Displaying the Output:"<<endl;
+    for(int i=0;i<n;i++)
     {
-        fin>>buff;
-        cout<<buff;
-        //s[i].displaydata();
+        fin.read((char *)&s[i], sizeof(s[i]));
+        s[i].displaydata();
     }
     return 0;
 }
