@@ -23,7 +23,7 @@ void display(T arr,int n){
 template <class T>
 void swap(T *xp, T *yp)
 {
-    int temp = *xp;
+    T temp = *xp;
     *xp = *yp;
     *yp = temp;
 }
@@ -47,7 +47,30 @@ void SelectionSort(T arr[], int n)
 
 int main()
 {
+    int n, data_type;
+    cout << "Enter The Total number of Elements: ";
+    cin>>n;
+
+    cout << "Enter the Data Type of Array: \n1] Integer\n2] float"<<endl;
+    cin>> data_type;
+
+    switch (data_type)
+    {
+    case 1:
+        int a[n];
+        for (int i = 0; i < n; i++)
+        {
+            cin>>a[i];
+        }
+        display(a,n);
+        
+        break;
     
+    default:
+        break;
+    }
+
+    /*
     int a[5]= {8,5,3,9,4};
     //n = sizeof(a)/sizeof(int);
     SelectionSort(a,5);
@@ -58,6 +81,6 @@ int main()
 
     display(a,5);
     display(b,5);
-
+*/
     return 0;
 }
