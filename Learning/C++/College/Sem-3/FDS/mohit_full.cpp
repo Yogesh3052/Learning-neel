@@ -141,6 +141,7 @@ void Sll::delete_mid()
     delete temp;
 }
 
+void Sll ::
 int main()
 {
     Sll s;
