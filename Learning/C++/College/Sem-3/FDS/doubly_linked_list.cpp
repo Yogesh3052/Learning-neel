@@ -131,7 +131,7 @@ void SLL :: inset_end(int a)
     temp->prev_add = temp1; 
 }
 // void SLL :: insert_after()
-// {
+// {    
 //     int value;
 //     cout<<"After which value do you want to insert : ";
 //     cin>>value;
