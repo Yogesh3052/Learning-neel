@@ -185,7 +185,7 @@ int main()
     l1.create();
     l1.display();
     l1.one_complement();
-    // l1.insert_beg();
+    // l1.insert_beg(); 
     // l1.inset_end();
     // l1.insert_after();
     // l1.display();
