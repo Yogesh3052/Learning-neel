@@ -64,7 +64,7 @@ void SLL ::display()
 }
 void SLL :: insert_beg()
 {
-       temp = new node;
+        temp = new node;
         i = i + 1 ;
         cout<<"Enter Data for node before head : ";
         cin>>temp->data;
